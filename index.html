@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bail: lock up your apps. Set your own bail.</title>
+<meta name="description" content="Bail is an app blocker for iPhone with money on the line. Lock up apps, categories or websites for a set time. Getting out early costs a bail you set yourself. Waiting is free.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#F6F4EF">
+<meta property="og:title" content="Bail: lock up your apps. Set your own bail.">
+<meta property="og:description" content="An app blocker for iPhone with money on the line. Free. Unless you cave.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denisfenger.github.io/bail/">
+<meta property="og:image" content="https://denisfenger.github.io/bail/assets/icon-512.png">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 01 HERO: the Jail tab ----------------------------------------------- -->
+<section class="band light hero">
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Bail home"><img src="assets/mark.svg" alt="" width="40" height="40"><span class="word">Bail</span></a>
+      <a class="toplink" href="support/">Support</a>
+    </header>
+
+    <div class="split">
+      <div class="copy">
+        <h1>Lock up your apps. Set your own bail.</h1>
+        <p class="lead">Pick the apps and how long. Set your bail: what getting out early costs. Wait it out and it costs nothing.</p>
+        <div class="cta">
+          <span class="pill">Coming to the App Store</span>
+          <a class="more" href="#how">See how it works</a>
+        </div>
+        <p class="note">For iPhone. No account, no ads.</p>
+      </div>
+
+      <div class="visual">
+        <div class="phone" role="img" aria-label="The Jail tab in Bail. Cell 3 has 1 hour 42 minutes left, out at 14:30, bail 20 dollars. Doomscroll is out at 19:00, no bail.">
+          <div class="screen light" aria-hidden="true">
+            <div class="island"></div>
+            <div class="sbar">
+              <span data-clock>12:47</span>
+              <span class="icons">
+                <svg class="sig" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+                <svg class="wifi" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1.5 4.6a9.5 9.5 0 0 1 13 0"/><path d="M4.2 7.4a5.6 5.6 0 0 1 7.6 0"/><circle cx="8" cy="10.3" r="1.2" fill="currentColor" stroke="none"/></svg>
+                <svg class="bat" viewBox="0 0 27 13"><rect x="0.5" y="0.5" width="23" height="12" rx="3.5" fill="none" stroke="currentColor" opacity="0.4"/><rect x="2" y="2" width="17" height="9" rx="2" fill="currentColor"/><path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="currentColor" opacity="0.4"/></svg>
+              </span>
+            </div>
+
+            <div class="jail">
+              <div>
+                <div class="title">Jail</div>
+                <div class="stats">12h served · $340 saved · Clean 5d <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></div>
+              </div>
+
+              <div class="mcard">
+                <div class="mrow">
+                  <div class="tiles">
+                    <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="3"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-2h5L16 7"/></svg></i>
+                    <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></i>
+                    <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="16" r="2"/></svg></i>
+                    <span>+2</span>
+                  </div>
+                  <span class="cname">Cell 3</span>
+                </div>
+                <div class="count" data-count="cell3">1:42:10</div>
+                <div class="mrow">
+                  <span class="outat">Out at 14:30</span>
+                  <span class="chip">Bail $20</span>
+                </div>
+                <div class="ticks" data-ticks="cell3"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+
+              <div class="mcard">
+                <div class="mrow">
+                  <div class="tiles">
+                    <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></i>
+                    <span>Social</span>
+                  </div>
+                  <span class="cname">Doomscroll</span>
+                </div>
+                <div class="count" data-count="doom">6:12:10</div>
+                <div class="mrow">
+                  <span class="outat">Out at 19:00</span>
+                  <span class="chip nobail">No bail</span>
+                </div>
+                <div class="ticks" data-ticks="doom"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+
+            <svg class="lockbtn" viewBox="0 0 112 132"><path d="M32 64V40a24 24 0 0 1 48 0" fill="none" stroke="#111111" stroke-width="12" stroke-linecap="round"/><rect x="8" y="56" width="96" height="76" rx="26" fill="#FF5B1F"/><path d="M56 78v32M40 94h32" fill="none" stroke="#111111" stroke-width="9" stroke-linecap="round"/></svg>
+
+            <div class="tabbar">
+              <span class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8.5 6v12M12 6v12M15.5 6v12"/></svg>Jail</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg>Settings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- 02 THE SHIELD ------------------------------------------------------- -->
+<section class="band dark">
+  <div class="wrap split rev">
+    <div class="copy">
+      <p class="eyebrow">The shield</p>
+      <h2>Try opening one.</h2>
+      <p class="lead">You get this instead. It says when they're out and what bail costs.</p>
+      <ul class="facts">
+        <li><span class="ui">Fine, I'll wait</span> closes the app.</li>
+        <li><span class="ui">Pay $20 bail</span> calls the bail desk.</li>
+        <li>You see the exact price first. Then Apple charges.</li>
+        <li>Websites get a shield too.</li>
+      </ul>
+    </div>
+
+    <div class="visual">
+      <div class="phone" role="img" aria-label="The shield on a locked app. Instagram is doing time. Out at 14:30. Bail: 20 dollars. Buttons: Fine, I'll wait, and Pay 20 dollars bail.">
+        <div class="screen dark" aria-hidden="true">
+          <div class="island"></div>
+          <div class="sbar">
+            <span data-clock>12:47</span>
+            <span class="icons">
+              <svg class="sig" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+              <svg class="wifi" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1.5 4.6a9.5 9.5 0 0 1 13 0"/><path d="M4.2 7.4a5.6 5.6 0 0 1 7.6 0"/><circle cx="8" cy="10.3" r="1.2" fill="currentColor" stroke="none"/></svg>
+              <svg class="bat" viewBox="0 0 27 13"><rect x="0.5" y="0.5" width="23" height="12" rx="3.5" fill="none" stroke="currentColor" opacity="0.4"/><rect x="2" y="2" width="17" height="9" rx="2" fill="currentColor"/><path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" fill="currentColor" opacity="0.4"/></svg>
+            </span>
+          </div>
+          <div class="shield">
+            <div class="mid">
+              <img src="assets/mark.svg" alt="" width="88" height="88">
+              <div class="stitle">Instagram is doing time.</div>
+              <div class="ssub">Out at 14:30. Bail: $20.</div>
+            </div>
+            <div class="btns">
+              <div class="sbtn">Fine, I'll wait</div>
+              <div class="sbtn plain">Pay $20 bail</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 HOW IT WORKS ----------------------------------------------------- -->
+<section class="band light" id="how">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2>Three steps. Then the door shuts.</h2>
+    <p class="lead">Pick the inmates, the time and the way out. Then hold to lock up.</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="n">1</span>
+        <h3>Who's going in?</h3>
+        <p>Apps, whole categories or websites. Picked in Apple's own picker.</p>
+        <div class="viz" aria-hidden="true">
+          <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="3"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-2h5L16 7"/></svg></i>
+          <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></i>
+          <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></i>
+          <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></i>
+          <span class="plus">+2</span>
+        </div>
+      </div>
+      <div class="step">
+        <span class="n">2</span>
+        <h3>For how long?</h3>
+        <p>Half an hour, until tomorrow, up to a week. Or on repeat.</p>
+        <div class="viz" aria-hidden="true">
+          <span class="dchip">30m</span><span class="dchip">1h</span><span class="dchip on">2h</span><span class="dchip">4h</span><span class="dchip">Until tomorrow</span><span class="dchip">Custom</span>
+        </div>
+      </div>
+      <div class="step">
+        <span class="n">3</span>
+        <h3>Way out</h3>
+        <p>What it costs to get out early. You set it.</p>
+        <div class="viz" aria-hidden="true">
+          <span class="dchip bail">Bail $20</span><span class="dchip">Parole</span><span class="dchip out">No bail</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hold">
+      <div class="holdbtn" aria-hidden="true"><span>Hold to lock up</span></div>
+      <div>
+        <h3>Once the door shuts, only bail or time gets them out.</h3>
+        <p>You get about 3 seconds to say <span class="ui">Wait, undo</span>. After that a sentence only gets stricter: longer, pricier, more inmates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 SET YOUR OWN BAIL (demo) ------------------------------------------ -->
+<section class="band dark">
+  <div class="wrap split">
+    <div class="copy">
+      <p class="eyebrow">Way out</p>
+      <h2>Set your own bail.</h2>
+      <p class="lead">From $1 to $10,000. Or no bail, and only time gets them out.</p>
+      <p class="lead soft">Waiting is free. You only pay if you cave.</p>
+    </div>
+
+    <div class="visual">
+      <div class="panel wayout" id="wayout">
+        <div class="seg" role="tablist" aria-label="Way out">
+          <button type="button" role="tab" id="tab-bail" aria-selected="true" aria-controls="wo-stage" data-tab="bail">Bail</button>
+          <button type="button" role="tab" id="tab-parole" aria-selected="false" aria-controls="wo-stage" data-tab="parole" tabindex="-1">Parole</button>
+          <button type="button" role="tab" id="tab-none" aria-selected="false" aria-controls="wo-stage" data-tab="none" tabindex="-1">No bail</button>
+        </div>
+        <div class="stage" id="wo-stage" role="tabpanel" aria-labelledby="tab-bail">
+          <div class="bigamt" id="wo-big" style="--w: 2.42">$20</div>
+          <div class="amtline" id="wo-line">The house default.</div>
+        </div>
+        <div class="ctl" id="wo-slider">
+          <div class="range" id="wo-range" style="--p: 0.3333">
+            <div class="track"></div>
+            <div class="fill"></div>
+            <div class="stops" aria-hidden="true"><i style="left: 0%"></i><i style="left: 8.3333%"></i><i style="left: 16.6667%"></i><i style="left: 25%"></i><i style="left: 33.3333%"></i><i style="left: 41.6667%"></i><i style="left: 50%"></i><i style="left: 58.3333%"></i><i style="left: 66.6667%"></i><i style="left: 75%"></i><i style="left: 83.3333%"></i><i style="left: 91.6667%"></i><i style="left: 100%"></i></div>
+            <input type="range" id="wo-input" min="0" max="12" step="1" value="4" aria-label="Bail" aria-valuetext="$20. The house default.">
+          </div>
+          <div class="ends" aria-hidden="true"><span>$1</span><span>$10,000</span></div>
+        </div>
+        <div class="ctl" id="wo-levels" hidden>
+          <div class="label" id="wo-sec">Security</div>
+          <div class="levels" role="group" aria-labelledby="wo-sec">
+            <button type="button" aria-pressed="false" data-level="0">Minimum</button>
+            <button type="button" aria-pressed="true" data-level="1">Medium</button>
+            <button type="button" aria-pressed="false" data-level="2">Maximum</button>
+          </div>
+        </div>
+        <div class="ctl show" id="wo-show" hidden>
+          <p>Want a number for show? The shield says:</p>
+          <p class="ui">Bail: $1,000,000. Denied.</p>
+        </div>
+        <p class="sum" id="wo-sum" aria-live="polite">Out early: pay $20.</p>
+      </div>
+      <p class="fine">Dollars here. Your own currency in the app.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 PAROLE AND CONDITIONS --------------------------------------------- -->
+<section class="band light">
+  <div class="wrap split rev">
+    <div class="copy">
+      <p class="eyebrow">Parole and conditions</p>
+      <h2>Solve your way out.</h2>
+      <p class="lead">Parole swaps the money for challenges. Solve them and you walk. No charge.</p>
+      <p class="lead">Conditions stack both: solve first, then pay. Stop halfway and you pay nothing. Your apps stay inside, though.</p>
+    </div>
+
+    <div class="visual">
+      <div class="panel">
+        <div class="sec" aria-label="Security levels">
+          <div><b>1</b><span>Minimum</span></div>
+          <div class="on"><b>3</b><span>Medium</span></div>
+          <div><b>5</b><span>Maximum</span></div>
+        </div>
+        <ul class="clist">
+          <li>
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></i>
+            <div><b>Crack the lock</b><span>Find the four-digit code. Six tries.</span></div>
+          </li>
+          <li>
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></i>
+            <div><b>Court costs</b><span>Add up the bill in your head.</span></div>
+          </li>
+          <li>
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></i>
+            <div><b>Paperwork</b><span>Copy the release statement, letter by letter.</span></div>
+          </li>
+          <li>
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 5v14M12 5v14M17 5v14"/></svg></i>
+            <div><b>Line-up</b><span>Repeat the order the bars light up.</span></div>
+          </li>
+        </ul>
+        <p class="cfoot">A wrong answer gets you a new one. Nothing repeats.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 REPEATS AND VISITS (demo) ----------------------------------------- -->
+<section class="band dark">
+  <div class="wrap split trio">
+    <div class="copy">
+      <p class="eyebrow">Repeats and visits</p>
+      <h2>Curfew, on repeat.</h2>
+      <p class="lead">Lock the same apps every night or every workday. Presets fill it in one tap.</p>
+      <p class="lead soft">Edit or delete it while it's open. Never while it's locked.</p>
+    </div>
+
+    <div class="visual">
+      <div class="panel week" id="week">
+        <div class="presets" role="group" aria-label="Presets">
+          <button type="button" aria-pressed="true" data-preset="nights">Nights</button>
+          <button type="button" aria-pressed="false" data-preset="work">Workdays</button>
+          <button type="button" aria-pressed="false" data-preset="evenings">Evenings</button>
+          <button type="button" aria-pressed="false" data-preset="allday">All day</button>
+        </div>
+        <p class="ptime" id="wk-time">Locked every day, 22:00 to 07:00.</p>
+        <div class="whead">
+          <b>Your week</b>
+          <span class="legend" aria-hidden="true"><span><i class="lk"></i>Locked</span><span><i class="op"></i>Open</span><span><i class="nw"></i>Now</span></span>
+        </div>
+        <div class="wrows" id="wk-rows" aria-hidden="true">
+          <div class="wrow"><b>Mon</b><div class="wbar" style="background: linear-gradient(to right, var(--srv) 0 29.1667%, var(--ctile) 0 91.6667%, var(--srv) 0)"></div></div>
+          <div class="wrow today"><b>Tue</b><div class="wbar" style="background: linear-gradient(to right, var(--srv) 0 29.1667%, var(--ctile) 0 91.6667%, var(--srv) 0)"><span class="now"></span></div></div>
+          <div class="wrow"><b>Wed</b><div class="wbar" style="background: linear-gradient(to right, var(--srv) 0 29.1667%, var(--ctile) 0 91.6667%, var(--srv) 0)"></div></div>
+          <div class="wrow"><b>Thu</b><div class="wbar" style="background: linear-gradient(to right, var(--srv) 0 29.1667%, var(--ctile) 0 91.6667%, var(--srv) 0)"></div></div>
+          <div class="wrow"><b>Fri</b><div class="wbar" style="background: linear-gradient(to right, var(--srv) 0 29.1667%, var(--ctile) 0 91.6667%, var(--srv) 0)"></div></div>
+          <div class="wrow"><b>Sat</b><div class="wbar" style="background: linear-gradient(to right, var(--srv) 0 29.1667%, var(--ctile) 0 91.6667%, var(--srv) 0)"></div></div>
+          <div class="wrow"><b>Sun</b><div class="wbar" style="background: linear-gradient(to right, var(--srv) 0 29.1667%, var(--ctile) 0 91.6667%, var(--srv) 0)"></div></div>
+        </div>
+        <div class="axis" aria-hidden="true"><span style="left: 0%">00</span><span style="left: 25%">06</span><span style="left: 50%">12</span><span style="left: 75%">18</span><span style="left: 100%">24</span></div>
+        <p class="wstatus" id="wk-status" aria-live="polite">Open now. Locks today at 22:00.</p>
+        <p class="wnote">Paying bail opens it until the next lock.</p>
+      </div>
+    </div>
+
+    <div class="visits">
+      <h3>Visits</h3>
+      <p>A long sentence can have visits. Sundays 14:00 to 16:00, say. During a visit your apps are free. The sentence stays.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 07 PAY BAIL UP FRONT -------------------------------------------------- -->
+<section class="band light">
+  <div class="wrap split rev">
+    <div class="copy">
+      <p class="eyebrow">Pay bail up front</p>
+      <h2>How much is your focus worth?</h2>
+      <p class="lead">Pay once. It's yours to keep, unless you cave.</p>
+      <p class="lead">Pick a number that hurts to lose. Each sentence's bail comes out of your bail fund. Serve it and it comes back.</p>
+      <p class="lead">Escape while a sentence is active and the whole fund is gone. That's the deal.</p>
+      <p class="after"><a href="terms/#escapes">The fine print, in the terms</a></p>
+    </div>
+
+    <div class="visual">
+      <div class="panel fund">
+        <div class="ttl">Bail fund</div>
+        <div class="amt">$50</div>
+        <p class="cap">Money in Bail stays in Bail.</p>
+        <div class="moves">
+          <p class="mlabel">What moves the money</p>
+          <div><span>You hold out</span><span>Back into the fund</span></div>
+          <div><span>You cave</span><span>Spent on your bail</span></div>
+          <div><span>You escape</span><span>The whole fund is gone</span></div>
+          <div><span>You want it back</span><span>Not possible</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 HOUSE RULES -------------------------------------------------------- -->
+<section class="band dark">
+  <div class="wrap">
+    <p class="eyebrow">House rules</p>
+    <h2>Getting around Bail is a jailbreak.</h2>
+    <p class="lead">Every way. We thought of them.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Strict mode</h3>
+        <p>On by default. While you're inside, no app can be deleted. Bail included.</p>
+      </div>
+      <div class="card">
+        <h3>Stricter now, softer tomorrow</h3>
+        <p>Tighten a rule and it applies at once. Loosen one and it waits 24 hours.</p>
+      </div>
+      <div class="card">
+        <h3>Escaping doesn't clear it</h3>
+        <p>Come back and it's waiting. Serve it again or pay its bail.</p>
+      </div>
+      <div class="card">
+        <h3>Your rap sheet remembers</h3>
+        <p>Served, bailed out, escaped. An escape resets your clean streak.</p>
+      </div>
+    </div>
+    <p class="after"><a href="terms/#escapes">The fine print, in the terms</a></p>
+  </div>
+</section>
+
+<!-- 09 PRIVATE BY DEFAULT ------------------------------------------------- -->
+<section class="band light">
+  <div class="wrap">
+    <p class="eyebrow">Private by default</p>
+    <h2>No account. No ads. No tracking.</h2>
+    <p class="lead">Your sentences, your rap sheet and your bail fund stay on your iPhone.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Anonymous tokens</h3>
+        <p>Apple hands Bail tokens, not a list of your apps. They never leave your iPhone.</p>
+      </div>
+      <div class="card">
+        <h3>No server</h3>
+        <p>Bail has none. There's nothing about you to sell.</p>
+      </div>
+      <div class="card">
+        <h3>Local notifications</h3>
+        <p>Every notification is scheduled on your iPhone. No push server.</p>
+      </div>
+      <div class="card">
+        <h3>Apple handles the money</h3>
+        <p>Apple charges. RevenueCat keeps the receipt under a random id.</p>
+      </div>
+    </div>
+    <p class="after"><a href="privacy/">Privacy policy</a></p>
+  </div>
+</section>
+
+<!-- 10 CLOSING ------------------------------------------------------------ -->
+<section class="band orange closing">
+  <div class="wrap">
+    <div class="bigword" aria-hidden="true">Bail</div>
+    <h2>Free. Unless you cave.</h2>
+    <p class="lead">We make money when you cave. So we made caving hurt.</p>
+    <div class="cta"><span class="pill">Coming to the App Store</span></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Bail home"><img src="assets/mark.svg" alt="" width="40" height="40"><span class="word">Bail</span></a>
+    <nav aria-label="Legal">
+      <a href="privacy/">Privacy policy</a>
+      <a href="terms/">Terms</a>
+      <a href="support/">Support</a>
+      <a href="impressum/">Impressum</a>
+    </nav>
+    <p class="small">Questions? <a href="mailto:bail@softailed.com">bail@softailed.com</a></p>
+    <p class="small">&copy; 2026 Fenger Digital GmbH</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  function pad(n) { return n < 10 ? '0' + n : String(n); }
+  function all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+
+  /* One clock for every phone on the page. Cell 3 runs 10:00 to 14:30 and the
+     page opens with 1:42:10 left, so the status bars read 12:47 and the
+     second cell, out at 19:00, has 6:12:10 left. */
+  var opened = Date.now();
+  var NOW0 = 12 * 3600 + 47 * 60 + 50;
+  var cells = [
+    { id: 'cell3', start: 10 * 3600, end: 14 * 3600 + 30 * 60 },
+    { id: 'doom', start: 11 * 3600, end: 19 * 3600 }
+  ];
+  function hms(s) { return Math.floor(s / 3600) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60); }
+  function tick() {
+    var now = NOW0 + Math.floor((Date.now() - opened) / 1000);
+    all('[data-clock]').forEach(function (el) { el.textContent = pad(Math.floor(now / 3600) % 24) + ':' + pad(Math.floor(now / 60) % 60); });
+    cells.forEach(function (c) {
+      var left = Math.max(0, c.end - now);
+      var count = document.querySelector('[data-count="' + c.id + '"]');
+      if (count) count.textContent = hms(left);
+      var served = Math.min(28, Math.floor(28 * (now - c.start) / (c.end - c.start)));
+      all('[data-ticks="' + c.id + '"] i').forEach(function (t, i) { t.className = i < served ? 'on' : ''; });
+    });
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  /* Way out: the app's step 3, small. Bail has 13 stops from $1 to $10,000,
+     each with its own line; parole and no bail as in the app. */
+  var LABELS = ['$1', '$2', '$5', '$10', '$20', '$50', '$100', '$200', '$500', '$1,000', '$2,000', '$5,000', '$10,000'];
+  var LINES = [
+    'A symbolic gesture.',
+    'Pocket change.',
+    'A cheap lunch.',
+    'Starting to sting.',
+    'The house default.',
+    'Now it hurts.',
+    'A nice dinner.',
+    'Serious money.',
+    'Rent, somewhere.',
+    'You really mean it.',
+    "Now you're just showing off.",
+    'Call your accountant.',
+    "Apple won't let you go higher."
+  ];
+  var LEVELS = [1, 3, 5];
+  var wo = { tab: 'bail', index: 4, level: 1 };
+  var big = document.getElementById('wo-big');
+  var line = document.getElementById('wo-line');
+  var sum = document.getElementById('wo-sum');
+  var stage = document.getElementById('wo-stage');
+  var slider = document.getElementById('wo-slider');
+  var levels = document.getElementById('wo-levels');
+  var show = document.getElementById('wo-show');
+  var range = document.getElementById('wo-range');
+  var input = document.getElementById('wo-input');
+  var tabs = all('#wayout [role="tab"]');
+
+  /* Archivo Expanded Black advance widths in em, so the amount always fits. */
+  function emWidth(text) {
+    var w = 0;
+    for (var i = 0; i < text.length; i++) {
+      var c = text.charAt(i);
+      w += c === '$' ? 0.75 : c === ',' ? 0.39 : c === ' ' ? 0.3 : /[0-9]/.test(c) ? 0.82 : 0.68;
+    }
+    return w;
+  }
+
+  function renderWayOut() {
+    var price = LABELS[wo.index];
+    var n = LEVELS[wo.level];
+    var text = price;
+    var said = LINES[wo.index];
+    var summary = 'Out early: pay ' + price + '.';
+    if (wo.tab === 'parole') {
+      text = String(n);
+      said = (n === 1 ? 'Solve one' : 'Solve ' + n) + ' and you walk. No charge.';
+      summary = 'Out early: solve ' + n + '. No charge.';
+    } else if (wo.tab === 'none') {
+      text = 'No bail';
+      said = 'Only time gets them out.';
+      summary = 'Out at 14:30. Not a minute sooner.';
+    }
+    big.textContent = text;
+    big.style.setProperty('--w', String(Math.max(1.6, emWidth(text))));
+    line.textContent = said;
+    sum.textContent = summary;
+    slider.hidden = wo.tab !== 'bail';
+    levels.hidden = wo.tab !== 'parole';
+    show.hidden = wo.tab !== 'none';
+    input.value = String(wo.index);
+    input.setAttribute('aria-valuetext', price + '. ' + LINES[wo.index]);
+    range.style.setProperty('--p', String(wo.index / 12));
+    tabs.forEach(function (t) {
+      var on = t.getAttribute('data-tab') === wo.tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      if (on) stage.setAttribute('aria-labelledby', t.id);
+    });
+    all('#wo-levels button').forEach(function (b, i) { b.setAttribute('aria-pressed', i === wo.level ? 'true' : 'false'); });
+  }
+
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { wo.tab = t.getAttribute('data-tab'); renderWayOut(); });
+    t.addEventListener('keydown', function (e) {
+      var step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!step) return;
+      e.preventDefault();
+      var next = tabs[(i + step + tabs.length) % tabs.length];
+      wo.tab = next.getAttribute('data-tab');
+      renderWayOut();
+      next.focus();
+    });
+  });
+  input.addEventListener('input', function () { wo.index = Number(input.value); renderWayOut(); });
+  all('#wo-levels button').forEach(function (b) {
+    b.addEventListener('click', function () { wo.level = Number(b.getAttribute('data-level')); renderWayOut(); });
+  });
+  renderWayOut();
+
+  /* Repeats: the presets from the app, drawn on a week of half hours. The page
+     pretends it is Tuesday, 12:47, like the phones above. */
+  var DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  var TODAY = 1;
+  var NOW_SLOT = 25;
+  var EVERY = [1, 1, 1, 1, 1, 1, 1];
+  var PRESETS = {
+    nights: { from: 44, to: 14, days: EVERY, text: 'Locked every day, 22:00 to 07:00.' },
+    work: { from: 18, to: 34, days: [1, 1, 1, 1, 1, 0, 0], text: 'Locked Monday to Friday, 09:00 to 17:00.' },
+    evenings: { from: 36, to: 44, days: EVERY, text: 'Locked every day, 18:00 to 22:00.' },
+    allday: { from: 0, to: 48, days: [1, 1, 1, 1, 1, 1, 0], text: 'Locked all day, Monday to Saturday.' }
+  };
+  var bars = all('#wk-rows .wbar');
+  var wkTime = document.getElementById('wk-time');
+  var wkStatus = document.getElementById('wk-status');
+  var presetButtons = all('#week [data-preset]');
+
+  function grid(p) {
+    var g = [];
+    var d, k;
+    for (d = 0; d < 7; d++) { g.push([]); for (k = 0; k < 48; k++) g[d].push(false); }
+    for (d = 0; d < 7; d++) {
+      if (!p.days[d]) continue;
+      if (p.from < p.to) {
+        for (k = p.from; k < p.to; k++) g[d][k] = true;
+      } else {
+        for (k = p.from; k < 48; k++) g[d][k] = true;
+        for (k = 0; k < p.to; k++) g[(d + 1) % 7][k] = true;
+      }
+    }
+    return g;
+  }
+  function gradient(row) {
+    var stops = [];
+    var k = 0;
+    while (k < 48) {
+      var on = row[k];
+      var end = k;
+      while (end < 48 && row[end] === on) end++;
+      stops.push((on ? 'var(--srv) ' : 'var(--ctile) ') + (k * 100 / 48).toFixed(4) + '% ' + (end * 100 / 48).toFixed(4) + '%');
+      k = end;
+    }
+    return 'linear-gradient(to right, ' + stops.join(', ') + ')';
+  }
+  function when(slot) {
+    var d = Math.floor(slot / 48) % 7;
+    var k = slot % 48;
+    var day = d === TODAY ? 'today' : d === (TODAY + 1) % 7 ? 'tomorrow' : DAYS[d];
+    return day + ' at ' + pad(Math.floor(k / 2)) + ':' + (k % 2 ? '30' : '00');
+  }
+  function renderWeek(id) {
+    var p = PRESETS[id];
+    var g = grid(p);
+    bars.forEach(function (bar, d) { bar.style.background = gradient(g[d]); });
+    var start = TODAY * 48 + NOW_SLOT;
+    var at = function (s) { return g[Math.floor(s / 48) % 7][s % 48]; };
+    var locked = at(start);
+    var change = -1;
+    for (var k = 1; k <= 336; k++) { if (at(start + k) !== locked) { change = start + k; break; } }
+    wkTime.textContent = p.text;
+    wkStatus.textContent = (locked ? 'Locked now. Opens ' : 'Open now. Locks ') + (change < 0 ? 'never' : when(change)) + '.';
+    presetButtons.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-preset') === id ? 'true' : 'false'); });
+  }
+  presetButtons.forEach(function (b) {
+    b.addEventListener('click', function () { renderWeek(b.getAttribute('data-preset')); });
+  });
+  renderWeek('nights');
+}());
+</script>
+</body>
+</html>
