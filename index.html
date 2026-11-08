@@ -9,7 +9,7 @@
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#F6F4EF">
 <meta property="og:title" content="Bail: lock up your apps. Set your own bail.">
-<meta property="og:description" content="An app blocker for iPhone with money on the line. Free. Unless you cave.">
+<meta property="og:description" content="An app blocker for iPhone with money on the line. Waiting is free. Bail isn't.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bail.softailed.com/">
 <meta property="og:image" content="https://bail.softailed.com/assets/icon-512.png">
@@ -238,10 +238,6 @@
             <button type="button" aria-pressed="false" data-level="2">Maximum</button>
           </div>
         </div>
-        <div class="ctl show" id="wo-show" hidden>
-          <p>Want a number for show? The shield says:</p>
-          <p class="ui">Bail: $1,000,000. Denied.</p>
-        </div>
         <p class="sum" id="wo-sum" aria-live="polite">Out early: pay $20.</p>
       </div>
       <p class="fine">Dollars here. Your own currency in the app.</p>
@@ -377,7 +373,7 @@
       </div>
       <div class="card">
         <h3>Stricter now, softer tomorrow</h3>
-        <p>Tighten a rule and it applies at once. Loosen one while something is locked and it waits 24 hours.</p>
+        <p>Tighten a rule and it applies at once. Loosen one and the sentences running now don't notice.</p>
       </div>
       <div class="card">
         <h3>Escaping doesn't clear it</h3>
@@ -424,7 +420,7 @@
 <section class="band orange closing">
   <div class="wrap">
     <div class="bigword" aria-hidden="true">Bail</div>
-    <h2>Free. Unless you cave.</h2>
+    <h2>Waiting is free. Bail isn't.</h2>
     <p class="lead">We only earn when you pay bail. So we made it hurt.</p>
     <div class="cta"><span class="pill">Coming to the App Store</span></div>
   </div>
@@ -503,7 +499,6 @@
   var stage = document.getElementById('wo-stage');
   var slider = document.getElementById('wo-slider');
   var levels = document.getElementById('wo-levels');
-  var show = document.getElementById('wo-show');
   var range = document.getElementById('wo-range');
   var input = document.getElementById('wo-input');
   var tabs = all('#wayout [role="tab"]');
@@ -539,7 +534,6 @@
     sum.textContent = summary;
     slider.hidden = wo.tab !== 'bail';
     levels.hidden = wo.tab !== 'parole';
-    show.hidden = wo.tab !== 'none';
     input.value = String(wo.index);
     input.setAttribute('aria-valuetext', price + '. ' + LINES[wo.index]);
     range.style.setProperty('--p', String(wo.index / 12));
