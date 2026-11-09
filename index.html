@@ -36,7 +36,7 @@
           <span class="pill">Coming to the App Store</span>
           <a class="more" href="#how">See how it works</a>
         </div>
-        <p class="note">For iPhone. No account, no ads.</p>
+        <p class="note">For iPhone, in seven languages. No account, no ads.</p>
       </div>
 
       <div class="visual">
@@ -71,7 +71,7 @@
                 <div class="count" data-count="cell3">1:42:10</div>
                 <div class="mrow">
                   <span class="outat">Out at 14:30</span>
-                  <span class="chip">Bail $20</span>
+                  <span class="chip">Bail $50</span>
                 </div>
                 <div class="ticks" data-ticks="cell3"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               </div>
@@ -117,7 +117,7 @@
       <p class="lead">You get this instead. It says when they're out and what bail costs.</p>
       <ul class="facts">
         <li><span class="ui">Fine, I'll wait</span> closes the app.</li>
-        <li><span class="ui">Pay $20 bail</span> calls the bail desk.</li>
+        <li><span class="ui">Pay $50 bail</span> sends you a notification. iOS won't let a locked app open Bail, so you pay from there.</li>
         <li>You see the exact price first. Then Apple charges.</li>
         <li>Websites get a shield too.</li>
       </ul>
@@ -139,11 +139,11 @@
             <div class="mid">
               <img src="assets/mark.svg" alt="" width="88" height="88">
               <div class="stitle">Instagram is doing time.</div>
-              <div class="ssub">Out at 14:30. Bail: $20.</div>
+              <div class="ssub">Out at 14:30. Bail: $50.</div>
             </div>
             <div class="btns">
               <div class="sbtn">Fine, I'll wait</div>
-              <div class="sbtn plain">Pay $20 bail</div>
+              <div class="sbtn plain">Pay $50 bail</div>
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@
         <h3>Way out</h3>
         <p>What it costs to get out early. You set it.</p>
         <div class="viz" aria-hidden="true">
-          <span class="dchip bail">Bail $20</span><span class="dchip">Parole</span><span class="dchip out">No bail</span>
+          <span class="dchip bail">Bail $50</span><span class="dchip">Parole</span><span class="dchip out">No bail</span>
         </div>
       </div>
     </div>
@@ -218,15 +218,15 @@
           <button type="button" role="tab" id="tab-none" aria-selected="false" aria-controls="wo-stage" data-tab="none" tabindex="-1">No bail</button>
         </div>
         <div class="stage" id="wo-stage" role="tabpanel" aria-labelledby="tab-bail">
-          <div class="bigamt" id="wo-big" style="--w: 2.42">$20</div>
-          <div class="amtline" id="wo-line">A handshake.</div>
+          <div class="bigamt" id="wo-big" style="--w: 2.42">$50</div>
+          <div class="amtline" id="wo-line">A firm handshake.</div>
         </div>
         <div class="ctl" id="wo-slider">
-          <div class="range" id="wo-range" style="--p: 0.3333">
+          <div class="range" id="wo-range" style="--p: 0.4167">
             <div class="track"></div>
             <div class="fill"></div>
             <div class="stops" aria-hidden="true"><i style="left: 0%"></i><i style="left: 8.3333%"></i><i style="left: 16.6667%"></i><i style="left: 25%"></i><i style="left: 33.3333%"></i><i style="left: 41.6667%"></i><i style="left: 50%"></i><i style="left: 58.3333%"></i><i style="left: 66.6667%"></i><i style="left: 75%"></i><i style="left: 83.3333%"></i><i style="left: 91.6667%"></i><i style="left: 100%"></i></div>
-            <input type="range" id="wo-input" min="0" max="12" step="1" value="4" aria-label="Bail" aria-valuetext="$20. A handshake.">
+            <input type="range" id="wo-input" min="0" max="12" step="1" value="5" aria-label="Bail" aria-valuetext="$50. A firm handshake.">
           </div>
           <div class="ends" aria-hidden="true"><span>$1</span><span>$10,000</span></div>
         </div>
@@ -238,7 +238,7 @@
             <button type="button" aria-pressed="false" data-level="2">Maximum</button>
           </div>
         </div>
-        <p class="sum" id="wo-sum" aria-live="polite">Out early: pay $20.</p>
+        <p class="sum" id="wo-sum" aria-live="polite">Out early: pay $50.</p>
       </div>
       <p class="fine">Dollars here. Your own currency in the app.</p>
     </div>
@@ -500,7 +500,7 @@
     "Apple won't let you go higher."
   ];
   var LEVELS = [1, 3, 5];
-  var wo = { tab: 'bail', index: 4, level: 1 };
+  var wo = { tab: 'bail', index: 5, level: 1 }; // $50, the app's default bail
   var big = document.getElementById('wo-big');
   var line = document.getElementById('wo-line');
   var sum = document.getElementById('wo-sum');
