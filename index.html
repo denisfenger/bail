@@ -219,14 +219,14 @@
         </div>
         <div class="stage" id="wo-stage" role="tabpanel" aria-labelledby="tab-bail">
           <div class="bigamt" id="wo-big" style="--w: 2.42">$20</div>
-          <div class="amtline" id="wo-line">The house default.</div>
+          <div class="amtline" id="wo-line">A handshake.</div>
         </div>
         <div class="ctl" id="wo-slider">
           <div class="range" id="wo-range" style="--p: 0.3333">
             <div class="track"></div>
             <div class="fill"></div>
             <div class="stops" aria-hidden="true"><i style="left: 0%"></i><i style="left: 8.3333%"></i><i style="left: 16.6667%"></i><i style="left: 25%"></i><i style="left: 33.3333%"></i><i style="left: 41.6667%"></i><i style="left: 50%"></i><i style="left: 58.3333%"></i><i style="left: 66.6667%"></i><i style="left: 75%"></i><i style="left: 83.3333%"></i><i style="left: 91.6667%"></i><i style="left: 100%"></i></div>
-            <input type="range" id="wo-input" min="0" max="12" step="1" value="4" aria-label="Bail" aria-valuetext="$20. The house default.">
+            <input type="range" id="wo-input" min="0" max="12" step="1" value="4" aria-label="Bail" aria-valuetext="$20. A handshake.">
           </div>
           <div class="ends" aria-hidden="true"><span>$1</span><span>$10,000</span></div>
         </div>
@@ -337,10 +337,10 @@
   <div class="wrap split rev">
     <div class="copy">
       <p class="eyebrow">The bail fund</p>
-      <h2>How serious are you about your focus?</h2>
-      <p class="lead">Make a jailbreak expensive. Put money down before you're tempted.</p>
-      <p class="lead">Pick a number that hurts to lose. Help them break out while a sentence is active and all of it is gone. That's the test you can't cheat.</p>
-      <p class="lead">Switch it on and it pays your bail too, when it covers it. It never goes back to your card.</p>
+      <h2>Make cheating cost you.</h2>
+      <p class="lead">Put money down. You only lose it if you cheat.</p>
+      <p class="lead">Pick a number that hurts to lose. Cheat while your apps are locked, and all of it is gone.</p>
+      <p class="lead">It can pay for your bail too, if you want it to. Only when it covers all of it. It never goes back to your card.</p>
       <p class="after"><a href="terms/#escapes">The fine print, in the terms</a></p>
     </div>
 
@@ -350,11 +350,18 @@
         <div class="amt">$50</div>
         <p class="cap">Money in Bail stays in Bail.</p>
         <div class="moves">
-          <p class="mlabel">What moves the money</p>
-          <div><span>They serve their time</span><span>It stays in the fund</span></div>
-          <div><span>You bail them out early</span><span>From the fund, if it's on</span></div>
-          <div><span>You help them break out</span><span>The whole fund is gone</span></div>
-          <div><span>You want it back</span><span>Not possible</span></div>
+          <p class="mtitle">What happens to the money</p>
+          <p class="mlabel">Nothing happens</p>
+          <ul>
+            <li>You serve your time.</li>
+            <li>You get parole.</li>
+            <li>You pay bail directly.</li>
+          </ul>
+          <p class="mlabel">It's taken</p>
+          <ul>
+            <li>You pay bail from it, with the switch on.</li>
+            <li>You cheat your way out. All of it goes.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -478,18 +485,18 @@
      each with its own line; parole and no bail as in the app. */
   var LABELS = ['$1', '$2', '$5', '$10', '$20', '$50', '$100', '$200', '$500', '$1,000', '$2,000', '$5,000', '$10,000'];
   var LINES = [
-    'A symbolic gesture.',
-    'Pocket change.',
-    'A cheap lunch.',
-    'Starting to sting.',
-    'The house default.',
-    'Now it hurts.',
-    'A nice dinner.',
-    'Serious money.',
-    'Rent, somewhere.',
-    'You really mean it.',
-    "Now you're just showing off.",
-    'Call your accountant.',
+    'A pinky promise.',
+    'A double pinky promise.',
+    'Cross your heart.',
+    "Scout's honor.",
+    'A handshake.',
+    'A firm handshake.',
+    'In writing.',
+    'In writing, witnessed.',
+    'Notarized.',
+    'Carved in stone.',
+    'Carved in a bigger stone.',
+    'A vow. The serious kind.',
     "Apple won't let you go higher."
   ];
   var LEVELS = [1, 3, 5];
