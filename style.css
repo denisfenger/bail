@@ -169,6 +169,12 @@ a:hover { text-decoration-thickness: 3px; }
   font-weight: 700; font-size: 16px; line-height: 1.2;
 }
 .pill::before { content: ""; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+
+/* Apple's own badge, unmodified, from release day on (2026-11-25). Apple asks
+   for 40px or more on screen and clear space of a quarter of its height. */
+.store { display: inline-flex; flex: none; margin: 12px 0; border-radius: 9px; }
+.store img { display: block; height: 48px; width: auto; }
+.store:focus-visible { outline: 2px solid var(--fg); outline-offset: 4px; }
 .orange .pill::before { background: var(--on-accent); }
 
 /* ---------- phones (drawn from the tokens) ---------- */
